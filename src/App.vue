@@ -1,29 +1,21 @@
 <script setup lang="ts">
+import { useCounterStore } from './stores/counter'
+
+const counter = useCounterStore()
 </script>
 
 <template>
-  <div>
-    <h1>Pomodoro Timer</h1>
-    <p>25:00</p>
-    <button>Start</button>
-    <button>Pause</button>
-    <button>Reset</button>
-  </div>
+  <h1>Hello App!</h1>
+  <p><strong>Current route path:</strong> {{ $route.fullPath }}</p>
+  <nav>
+    <RouterLink to="/">Go to Home</RouterLink>
+    <RouterLink to="/settings">Go to About</RouterLink>
+  </nav>
+  <main>
+    <router-view v-slot="{ Component }">
+      <transition>
+        <component :is="Component" />
+      </transition>
+    </router-view>
+  </main>
 </template>
-
-<style scoped>
-h1 {
-  text-align: center;
-  font-family: sans-serif;
-}
-
-p {
-  font-size: 2em;
-  text-align: center;
-}
-
-button {
-  margin: 5px;
-  padding: 10px 20px;
-}
-</style>
