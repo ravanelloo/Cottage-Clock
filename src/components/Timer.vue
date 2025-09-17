@@ -1,0 +1,17 @@
+<script setup lang="ts">
+import { Icon } from '@iconify/vue'
+</script>
+
+<template>
+<!doctype html>
+<html>
+<span class="countdown font-mono text-2xl">
+  <span style="--value:10;" aria-live="polite" aria-label="10">10</span>
+  :
+  <span style="--value:24;" aria-live="polite" aria-label="24">24</span>
+  :
+  <span style="--value:59;" aria-live="polite" aria-label="59">59</span>
+</span>
+
+</html>
+</template>

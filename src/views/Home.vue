@@ -1,13 +1,30 @@
 <script setup lang="ts">
+import { Icon } from '@iconify/vue'
+import Timer from '../components/Timer.vue';
 </script>
 
 <template>
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+</head>
+<body>
   <h1 class="text-3xl font-bold underline">
     Hello world!
   </h1>
-  <span class="countdown font-mono text-6xl">
-  <span style="--value:59;" aria-live="polite" aria-label="59">59</span>
-</span>
+</body>
+	<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+		<g fill="none">
+			<path fill="#008463" d="M15.99 5a1 1 0 0 1 1 1v4.42a1 1 0 1 1-2 0V6a1 1 0 0 1 1-1" />
+			<path fill="#f8312f" d="M19.97 9.99H12c-5.53 0-10 4.48-10 10c0 5.53 4.48 10 10 10h7.96c5.53 0 10-4.48 10-10c.01-5.52-4.47-10-9.99-10" />
+			<path fill="#00d26a" d="M15.4 12.66H9.64c-3.13 0-5.66-2.53-5.66-5.66h5.76c3.13 0 5.66 2.53 5.66 5.66M27.97 7h-5.76c-3.13 0-5.66 2.53-5.66 5.66h5.76c3.13 0 5.66-2.53 5.66-5.66" />
+			<path fill="#00f397" d="M5.75 15.07h5.77a5.65 5.65 0 0 0 4.468-2.187a5.65 5.65 0 0 0 4.472 2.187h5.76c0-3.12-2.54-5.66-5.66-5.66h-9.15c-3.13 0-5.66 2.53-5.66 5.66" />
+		</g>
+	</svg>
+</html>
 </template>
 
 <style scoped>

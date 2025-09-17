@@ -1,4 +1,10 @@
-@import "tailwindcss"@import "daisyui";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
 
+html, body {
+  font-family: 'Cormorant Upright', serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
-
+@import "tailwindcss";
+@plugin "daisyui";
