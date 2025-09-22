@@ -9,7 +9,7 @@ const counter = useCounterStore()
   <p><strong>Current route path:</strong> {{ $route.fullPath }}</p>
   <nav>
     <RouterLink to="/">Go to Home</RouterLink>
-    <RouterLink to="/settings">Go to About</RouterLink>
+    <RouterLink to="/settings">Go to Settings</RouterLink>
   </nav>
   <main>
     <router-view v-slot="{ Component }">
