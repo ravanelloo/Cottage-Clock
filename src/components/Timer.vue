@@ -25,6 +25,5 @@ import { Icon } from '@iconify/vue'
     <button class="btn">Short break</button>
     <button class="btn">Long break</button>
   </div>
-</div>
 </html>
 </template>
