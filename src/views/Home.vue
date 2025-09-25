@@ -11,11 +11,6 @@ import Timer from '../components/Timer.vue';
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/src/style.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
 	<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
 		<g fill="none">
 			<path fill="#008463" d="M15.99 5a1 1 0 0 1 1 1v4.42a1 1 0 1 1-2 0V6a1 1 0 0 1 1-1" />

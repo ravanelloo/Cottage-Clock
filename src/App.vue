@@ -1,21 +1,20 @@
 <script setup lang="ts">
 import { useCounterStore } from './stores/counter'
-
+import Timer from './components/Timer.vue'
 const counter = useCounterStore()
 </script>
 
 <template>
-  <h1>Hello App!</h1>
-  <p><strong>Current route path:</strong> {{ $route.fullPath }}</p>
-  <nav>
-    <RouterLink to="/">Go to Home</RouterLink>
-    <RouterLink to="/settings">Go to Settings</RouterLink>
-  </nav>
-  <main>
-    <router-view v-slot="{ Component }">
-      <transition>
-        <component :is="Component" />
-      </transition>
-    </router-view>
-  </main>
+  <div class="min-h-screen flex">
+    <!-- Left content (2/3 width) -->
+    <div class="w-2/3 bg-base-200 p-4">
+      <h2 class="text-6xl font-bold mb-4">Cottage Clock</h2>
+      <!-- Add other components here -->
+    </div>
+
+    <!-- Right Timer (1/3 width) -->
+    <div class="w-1/3 p-4 flex justify-center items-start">
+      <Timer />
+    </div>
+  </div>
 </template>
