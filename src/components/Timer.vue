@@ -83,7 +83,7 @@ function startNextStep() {
 }
 
 const startButtonLabel = computed(() => {
-  if (!hasStarted.value) return "Start Session"
+  if (!hasStarted.value) return "Start"
   if (intervalId.value === null && time.value > 0) return "Resume"
   return "Running..."
 })
