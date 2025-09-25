@@ -2,15 +2,8 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./dist",
-    "allowJs": true,
-    "jsx": "preserve",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "target": "esnext",
-    "lib": ["esnext", "dom"],
-    "sourceMap": true,
-    "strict": true,
-    "types": ["vite/client"]
+    "allowJs": true
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
 }
+
