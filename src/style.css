@@ -1,10 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 html, body {
-  font-family: 'Cormorant Upright', serif;
+  font-family: 'Almendra', serif;
   font-weight: 400;
   font-style: normal;
 }
 
+
 @import "tailwindcss";
 @plugin "daisyui";
+
+
+
+@plugin "daisyui/theme" {
+  name: "pomodoro";
+  default: true;
+  prefersdark: true;
+  color-scheme: "light";
+  --color-base-100: oklch(40% 0.101 131.063);
+  --color-base-200: oklch(27% 0.072 132.109);
+  --color-base-300: oklch(45% 0.124 130.933);
+  --color-base-content: oklch(98% 0.031 120.757);
+  --color-primary: oklch(93% 0.127 124.321);
+  --color-primary-content: oklch(27% 0.072 132.109);
+  --color-secondary: oklch(89% 0.196 126.665);
+  --color-secondary-content: oklch(27% 0.072 132.109);
+  --color-accent: oklch(70% 0.213 47.604);
+  --color-accent-content: oklch(98% 0.016 73.684);
+  --color-neutral: oklch(40% 0.101 131.063);
+  --color-neutral-content: oklch(98% 0.002 247.839);
+  --color-info: oklch(87% 0.169 91.605);
+  --color-info-content: oklch(30% 0.056 229.695);
+  --color-success: oklch(84% 0.238 128.85);
+  --color-success-content: oklch(27% 0.072 132.109);
+  --color-warning: oklch(75% 0.183 55.934);
+  --color-warning-content: oklch(26% 0.079 36.259);
+  --color-error: oklch(63% 0.237 25.331);
+  --color-error-content: oklch(25% 0.092 26.042);
+  --radius-selector: 1rem;
+  --radius-field: 1rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.28125rem;
+  --border: 1.5px;
+  --depth: 1;
+  --noise: 0;
+}
+
+
+
