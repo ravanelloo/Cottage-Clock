@@ -11,25 +11,23 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '20.19.0' # Vite requires Node.js 20.19+ or 22.12+
 
       - name: Install dependencies
-        run: |
-          npm install
+        run: npm ci
 
       - name: Build project
-        run: |
-          npm run build
+        run: npm run build
 
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: cottage-clock1
+          projectName: cottage-clock1   # <- change this to your Cloudflare Pages project name
           directory: ./dist
